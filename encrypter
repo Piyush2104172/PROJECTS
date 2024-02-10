@@ -1,0 +1,28 @@
+def encoding():
+    user_input = input("Enter string which you want to Encode or Decode: ")
+    if len(user_input) <= 3:
+        print(user_input.replace(user_input[0],"tyo") + user_input.join(user_input[0]) + user_input.replace(user_input[0:],"rli"))
+    else:
+        print(user_input[::-1])
+
+def decoding():
+    user_input = input("Enter string which you want to \nEncode or Decode: ")
+    if len(user_input) >= 3:
+        print(user_input[::-1])
+    else:
+        print(user_input.replace(user_input[0],"tyr") + user_input.join(user_input[0]) + user_input.replace(user_input[0:],"klf"))
+
+while True:
+    ask_user_1 = int(input("What do you want?\nEncode[1] or Decode[2]: "))
+    if ask_user_1 == 1:
+        encoding()
+    elif ask_user_1 == 2:
+        decoding()
+    else:
+        print("Please select 1 for Encode or 2 for Decode.")
+    ask_user_2 = input("Press q for exit or press any key to continue.\n")
+    match ask_user_2:
+        case "Q":
+            break
+        case "q":
+            break
