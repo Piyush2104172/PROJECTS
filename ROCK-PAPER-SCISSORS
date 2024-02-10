@@ -19,13 +19,13 @@ def getGameResult(player_choice, computer_choice):
     }
     return rules[player_choice][computer_choice]
 
-# Initialize variables
+
 rounds = 10
 player_score = 0
 draw=0
 for _ in range(rounds):
     player_choice = playerPlays()
-# Generate a random number between 1 and 3 for computer's choice
+
     computer_choice = str(random.randint(1, 3)) 
     print(f"Computer plays: {computer_choice}.")
 
