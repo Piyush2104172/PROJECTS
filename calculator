@@ -1,0 +1,69 @@
+def addition(number1, number2):
+    return number1 + number2
+
+def subtraction(number1, number2):
+    return number1 - number2
+
+def multiplication(number1, number2):
+    return number1 * number2
+
+def division(number1, number2):
+    return number1 / number2
+
+def modulus(number1, number2):
+    return number1 % number2
+
+def exponential(number1, number2):
+    return number1 ** number2
+
+def floor_division(number1, number2):
+    return number1 // number2
+
+# Main program
+print('Choose an option below')
+print("1. Addition ")
+print("2. Subtraction ")
+print("3. Multiplication")
+print("4. Division")
+print("5. Modulus" )
+print("6. Exponential ")
+print("7. Floor Division" )
+print("8. Exit")
+
+choice = input("Enter your choice (1-8): ")
+number1 = int(input('Enter the first number: '))
+number2 = int(input('Enter the second number: '))
+
+if choice == '1':
+    result = addition(number1, number2)
+    print('The addition of', number1, 'and', number2, 'is', result)
+
+elif choice == '2':
+    result = subtraction(number1, number2)
+    print('The subtraction of', number1, 'and', number2, 'is', result)
+
+elif choice == '3':
+    result = multiplication(number1, number2)
+    print('The multiplication of', number1, 'and', number2, 'is', result)
+
+elif choice == '4':
+    result = division(number1, number2)
+    print('The division of', number1, 'and', number2, 'is', result)
+
+elif choice == '5':
+    result = modulus(number1, number2)
+    print('The modulus of', number1, 'and', number2, 'is', result)
+
+elif choice == '6':
+    result = exponential(number1, number2)
+    print('The exponential of', number1, 'and', number2, 'is', result)
+
+elif choice == '7':
+    result = floor_division(number1, number2)
+    print('The floor division of', number1, 'and', number2, 'is', result)
+
+elif choice == '8':
+    print('Exiting the program.')
+
+else:
+    print('Invalid choice. Please enter a valid option.')
